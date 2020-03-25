@@ -1,0 +1,20 @@
+.profile {
+  grid-area: profile;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+h2.name {
+}
+
+h4.title {
+  margin-bottom: 12px;
+}
+
+h5.email {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

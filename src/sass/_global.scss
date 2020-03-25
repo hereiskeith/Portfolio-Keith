@@ -1,16 +1,14 @@
 // Global styling for this template
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   @include body-font;
   color: $text;
   background: $light;
+  line-height: 1.5;
 }
-//@media (min-width: 992px) {
-//  body {
-//    padding-top: 0;
-//    padding-left: $sidebar-base-width;
-//  }
-//}
 
 h1,
 h2,
@@ -19,31 +17,41 @@ h4,
 h5,
 h6 {
   @include heading-font;
+  margin: 0;
+  padding: 0;
   font-weight: 700;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   color: $gray-800;
 }
 
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 3.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 2rem;
+  line-height: 1.2;
 }
 
 h4 {
   font-size: 1.5rem;
+  line-height: 1.2;
 }
 
-p.lead {
-  font-size: 1.15rem;
-  font-weight: 400;
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 .subheading {

@@ -1,0 +1,19 @@
+.selectionsWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 100px 0 50px;
+}
+.eachSelection {
+  padding: 8px;
+  font-weight: 700;
+  color: $text;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+
+  &-clicked {
+    color: $primary;
+    text-decoration: underline;
+  }
+}

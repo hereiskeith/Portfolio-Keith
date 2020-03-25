@@ -1,0 +1,27 @@
+.informationWrapper {
+  position: fixed;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 350px 200px;
+  grid-template-areas:
+          "profile whiteBackground"
+          "tags whiteBackground"
+          "digitalClock whiteBackground";
+  min-height: 100vh;
+}
+
+.whiteBackground {
+  grid-area: whiteBackground;
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.resumeWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-left: 550px;
+  padding: 70px 0px
+}

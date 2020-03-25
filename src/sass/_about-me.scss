@@ -1,0 +1,14 @@
+.aboutMeWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.aboutMe-title {
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $gray-300;
+  //text-align: center;
+}

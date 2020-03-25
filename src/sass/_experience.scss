@@ -1,0 +1,51 @@
+.experienceWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.experienceTitle {
+  width: 100%;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid $gray-300;
+}
+
+.eachExperience {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.jobDuration {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: $primary;
+  font-weight: 400;
+}
+
+.jobTitle {
+  width: 100%;
+}
+
+.jobLocation {
+  padding-top: 12px;
+  width: 100%;
+}
+
+svg.locationIcon {
+  width: 20px;
+  height: 20px;
+  vertical-align: baseline;
+  color: $primary;
+}
+
+.jobDetail {
+  width: 75%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}

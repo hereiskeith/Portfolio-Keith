@@ -1,0 +1,18 @@
+.digitalClock {
+  grid-area: digitalClock;
+  align-self: flex-end;
+  justify-self: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.seconds {
+  color: $primary;
+}
+
+q.slogan {
+  margin-top: 8px;
+  font-weight: 600;
+}
