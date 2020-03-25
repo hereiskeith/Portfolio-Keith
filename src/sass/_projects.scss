@@ -8,17 +8,16 @@
 .projectsTitle {
   width: 100%;
   padding-bottom: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
   border-bottom: 1px solid $gray-300;
 }
 
 .eachProject {
-  overflow: auto;
   position: relative;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 40px;
 }
 
 .logoWrapper {
@@ -68,6 +67,30 @@
   margin-bottom: 12px;
 }
 
-.projectPhotoGallery {
-  width: 2000px;
+.galleryWrapper {
+  width: 100%;
+  overflow: auto;
+}
+
+.bizmsmPhotoGallery {
+  width: 1800px;
+}
+
+.dashboardPhotoGallery {
+  width: 2600px;
+}
+
+.bizmsmPic {
+  width: 160px;
+  height: 300px;
+  margin-right: 8px;
+  opacity: 1;
+}
+
+.dashboardPic {
+  display: inline-block;
+  width: 600px;
+  height: 350px;
+  margin-right: 8px;
+  opacity: 1;
 }
