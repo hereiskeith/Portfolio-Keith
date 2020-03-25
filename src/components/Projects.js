@@ -5,17 +5,17 @@ import { bizmsmPics } from './bizmsmPics';
 import { dashboardPics } from "./dashboardPics";
 
 const renderBizmsmPics = () => {
-  return bizmsmPics.map(each => {
+  return bizmsmPics.map((each, index) => {
     return (
-      <img className='bizmsmPic' src={each} />
+      <img key={`biz-${index}`} alt={`biz-${index}`} className='bizmsmPic' src={each} />
     )
   })
 };
 
 const renderDashboardPics = () => {
-  return dashboardPics.map(each => {
+  return dashboardPics.map((each, index) => {
     return (
-      <img className='dashboardPic' src={each} />
+      <img key={`dashboard-${index}`} alt={`dashboard-${index}`} className='dashboardPic' src={each} />
     )
   })
 };
@@ -31,7 +31,7 @@ const Projects = props => {
       <div className='eachProject'>
 
         <div className='logoWrapper'>
-          <img className='projectLogo' src={BizMSM} />
+          <img alt='bizmsm-logo' className='projectLogo' src={BizMSM} />
         </div>
 
         <div className='projectDetailWrapper'>
@@ -54,7 +54,7 @@ const Projects = props => {
       <div className='eachProject'>
 
         <div className='logoWrapper'>
-          <img className='projectLogo' src={Dashboard} />
+          <img alt='dashboard-logo' className='projectLogo' src={Dashboard} />
         </div>
 
         <div className='projectDetailWrapper'>

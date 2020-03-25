@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Fragment } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const DigitalClock = props => {
   const [time, setTime] = useState(new Date());

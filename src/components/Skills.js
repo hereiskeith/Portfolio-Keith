@@ -1,6 +1,6 @@
 import React from 'react';
 import LinearProgress from '@material-ui/core/LinearProgress';
-import { withStyles, lighten } from "@material-ui/core";
+import { withStyles } from "@material-ui/core";
 
 const Skills = props => {
   const skills =
@@ -30,7 +30,7 @@ const Skills = props => {
         })(LinearProgress);
 
         return (
-          <div className='eachSkill'>
+          <div key={each.skill} className='eachSkill'>
             <p>
               {each.skill}
               <span style={{color: each.color}}>&nbsp;{`(${each.value}%)`}</span>
