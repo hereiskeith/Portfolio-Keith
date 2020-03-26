@@ -7,12 +7,19 @@ const Experience = props => {
       <h3 className='experienceTitle'>Experience</h3>
       <div className='eachExperience'>
         <h6 className='jobDuration'>May 2019 – Present</h6>
-        <h4 className='jobTitle'>Front-end Developer / Research Assistant</h4>
-        <h5 className='jobLocation'><LocationOnIcon className='locationIcon'/>University of Ottawa</h5>
-        <p className='jobDetail'>I am a Jr. Front-end Developer with 1+ years of experience.
-          I am passionate about what I do and always give 100%. When I undertake
-          a project or task, I don’t just complete it, I go the extra mile
-          and make it better than requested
+        <h4 className='jobTitle'>Front-end Developer</h4>
+        <h5 className='jobLocation'>
+          <LocationOnIcon className='locationIcon'/>
+          &nbsp;University of Ottawa
+        </h5>
+        <p className='jobDetail'>
+          Experiencing and proficient in following Technology:
+          React, Redux, Material-UI,
+          BootStrap, SASS, Highcharts and others. Working on a
+          React e-commerce project from the ground up –
+          design, development, debugging, troubleshooting,
+          testing, delivery and maintenance.
+          Able to effectively self-manage during independent tasks, as well as collaborating in a team setting.
         </p>
       </div>
     </div>

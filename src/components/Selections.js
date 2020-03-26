@@ -41,6 +41,14 @@ const Selections = props => {
       >
         Projects
       </a>
+      <a
+        id='#contact'
+        href='#contact'
+        onClick={handleClick}
+        className={'eachSelection ' + (focus === '#contact' ? 'eachSelection-clicked' : '')}
+      >
+        Contact
+      </a>
     </div>
 
 

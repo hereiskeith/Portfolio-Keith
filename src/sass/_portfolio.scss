@@ -2,7 +2,7 @@
   position: fixed;
   display: grid;
   grid-template-rows: auto auto 1fr;
-  grid-template-columns: 350px 200px;
+  grid-template-columns: 300px 180px;
   grid-template-areas:
           "profile whiteBackground"
           "tags whiteBackground"
@@ -22,6 +22,37 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin-left: 550px;
+  margin-left: 480px;
   padding: 70px 0px
+}
+
+@media only screen and (max-width: 960px) {
+  .informationWrapper {
+    position: static;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: fit-content;
+  }
+
+  .whiteBackground {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+    background: transparent;
+  }
+
+  .resumeWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  div.tabletNotShown {
+    display: none;
+  }
 }

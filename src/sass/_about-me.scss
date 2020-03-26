@@ -12,3 +12,20 @@
   border-bottom: 1px solid $gray-300;
   //text-align: center;
 }
+
+div.onlyTabletShown, .onlyTabletShown {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  div.onlyTabletShown {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .onlyTabletShown {
+    display: inline;
+  }
+}
+

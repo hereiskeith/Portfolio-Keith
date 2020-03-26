@@ -3,11 +3,16 @@ import BizMSM from '../static/bizmsm.png';
 import Dashboard from '../static/dashboard.png';
 import { bizmsmPics } from './bizmsmPics';
 import { dashboardPics } from "./dashboardPics";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const renderBizmsmPics = () => {
   return bizmsmPics.map((each, index) => {
     return (
-      <img key={`biz-${index}`} alt={`biz-${index}`} className='bizmsmPic' src={each} />
+      <div key={`bizmsm-${index}`} className='bizmsmPicWrapper'>
+        <img key={`biz-${index}`} alt={`biz-${index}`} className='bizmsmPic' src={each} />
+      </div>
     )
   })
 };
@@ -15,13 +20,53 @@ const renderBizmsmPics = () => {
 const renderDashboardPics = () => {
   return dashboardPics.map((each, index) => {
     return (
-      <img key={`dashboard-${index}`} alt={`dashboard-${index}`} className='dashboardPic' src={each} />
+      <div key={`dashboard-${index}`} className='dashboardPicWrapper'>
+        <img alt={`dashboard-${index}`} className='dashboardPic' src={each} />
+      </div>
     )
   })
 };
 
 
 const Projects = props => {
+
+  let bizmsmSettings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: true,
+          infinite: true,
+          dots: true
+        }
+      },
+      // {
+      //   breakpoint: 600,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2
+      //   }
+      // }
+      ]
+  };
+
+  let dashboardSettings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
     <div id='projects' className='projectsWrapper'>
       <h3 className='projectsTitle'>
@@ -41,11 +86,9 @@ const Projects = props => {
             An awesome e-commerce app grouping local merchants and customers
           </p>
 
-          <div className='galleryWrapper'>
-            <div className='bizmsmPhotoGallery'>
-              {renderBizmsmPics()}
-            </div>
-          </div>
+          <Slider {...bizmsmSettings}>
+            {renderBizmsmPics()}
+          </Slider>
 
         </div>
 
@@ -65,12 +108,9 @@ const Projects = props => {
             <br />
             (https://github.com/hereiskeith/React-dashboard)
           </p>
-
-          <div className='galleryWrapper'>
-            <div className='dashboardPhotoGallery'>
+          <Slider {...dashboardSettings}>
               {renderDashboardPics()}
-            </div>
-          </div>
+          </Slider>
 
         </div>
 

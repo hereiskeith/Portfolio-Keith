@@ -9,6 +9,7 @@
 
 h2.name {
   padding: 24px;
+  color: $primary;
 }
 
 h4.title {
@@ -18,4 +19,35 @@ h4.title {
 h5.email {
   margin-top: 8px;
   margin-bottom: 8px;
+  svg.emailIcon {
+    display: inline-block;
+    vertical-align: sub;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .profile {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+    margin-top: 72px;
+    padding-left: 48px;
+    box-sizing: border-box;
+    background: white;
+  }
+
+  h2.name {
+    padding: 12px;
+  }
+
+  h4.title, h5.email {
+    padding-left: 12px;
+  }
+
+  h5.email {
+    margin-bottom: 24px;
+  }
 }

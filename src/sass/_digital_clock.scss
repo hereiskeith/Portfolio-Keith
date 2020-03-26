@@ -16,3 +16,14 @@ q.slogan {
   margin-top: 8px;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 960px) {
+  .digitalClock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+  }
+}
