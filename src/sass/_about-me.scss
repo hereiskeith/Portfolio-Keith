@@ -9,23 +9,30 @@
 .aboutMe-title {
   width: 100%;
   padding-bottom: 16px;
-  border-bottom: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-400;
+  color: $primary;
   //text-align: center;
 }
 
-div.onlyTabletShown, .onlyTabletShown {
+div.onlyMobileAndTabletShown, .onlyMobileAndTabletShown {
   display: none;
 }
 
 @media only screen and (max-width: 960px) {
-  div.onlyTabletShown {
+  div.onlyMobileAndTabletShown {
     display: flex;
     justify-content: center;
     padding: 0;
   }
 
-  .onlyTabletShown {
+  .onlyMobileAndTabletShown {
     display: inline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutMeWrapper {
+    width: 90%
   }
 }
 

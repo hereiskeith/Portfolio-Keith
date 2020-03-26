@@ -4,7 +4,7 @@ const DigitalClock = props => {
   const [time, setTime] = useState(new Date());
   const timeToString = time.toLocaleTimeString().replace(/:/g, ' : ');
   const timeOnlySecond = (time.getSeconds() < 10 ? '0' : '') + time.getSeconds();
-  const timeDisplayWithoutSecond = timeToString.substring(0, timeToString.length - 2);
+  const timeDisplayWithoutSecond = timeToString.substring(0, 10);
 
   useEffect(() => {
     let UpdateTimeEach1s = setTimeout(() => {

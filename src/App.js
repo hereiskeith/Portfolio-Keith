@@ -18,11 +18,11 @@ const App = () => {
       <div className='informationWrapper'>
         <Profile />
         <Tags className='tabletNotShown'/>
-        <DigitalClock />
         <div className='whiteBackground'>
           <Selections />
           <MyAvatar />
         </div>
+        <DigitalClock />
       </div>
 
       <div className='resumeWrapper'>
@@ -31,6 +31,7 @@ const App = () => {
         <Experience />
         <Projects />
         <Contact />
+        <footer className='footer'>&copy;Thanks for reading and have a nice day!</footer>
       </div>
 
     </div>

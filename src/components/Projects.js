@@ -48,13 +48,13 @@ const Projects = props => {
           dots: true
         }
       },
-      // {
-      //   breakpoint: 600,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     slidesToScroll: 2
-      //   }
-      // }
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
       ]
   };
 
@@ -106,7 +106,6 @@ const Projects = props => {
           <p className='projectDetail'>
             This awesome react dashboard is showing Bitcom trend with Highcharts charts
             <br />
-            (https://github.com/hereiskeith/React-dashboard)
           </p>
           <Slider {...dashboardSettings}>
               {renderDashboardPics()}

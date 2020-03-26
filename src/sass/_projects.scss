@@ -9,7 +9,8 @@
   width: 100%;
   padding-bottom: 16px;
   margin-bottom: 30px;
-  border-bottom: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-400;
+  color: $primary;
 }
 
 .eachProject {
@@ -54,7 +55,7 @@
   margin-left: 80px;
   padding: 20px;
   padding-bottom: 60px;
-  border-radius: 4px;
+  border-radius: 6px;
   background: white;
 }
 
@@ -89,5 +90,41 @@
   display: block;
   width: 100%;
   height: auto;
+}
 
+@media only screen and (max-width: 600px) {
+  .projectsWrapper {
+    width: 90%
+  }
+
+  .eachProject {
+    align-items: center;
+  }
+
+  .logoWrapper {
+    position: relative;
+    width: 68px;
+    height: 68px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: white;
+
+    &::after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      left: 28px;
+      top: 80px;
+    }
+  }
+
+  .projectLogo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .projectDetailWrapper {
+    width: 90%;
+    margin-left: 0px;
+  }
 }

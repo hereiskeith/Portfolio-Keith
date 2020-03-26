@@ -51,3 +51,16 @@ h5.email {
     margin-bottom: 24px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .profile {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    background: $light;
+  }
+
+  h4.title {
+    margin-top: 16px;
+  }
+}

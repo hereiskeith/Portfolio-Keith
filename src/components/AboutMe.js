@@ -11,9 +11,9 @@ const AboutMe = props => {
         I go the extra mile and make it better than requested.
         <br />
         <br />
-        <span className='onlyTabletShown'>Please feel free to browse around via:</span>
+        <span className='onlyMobileAndTabletShown'>Please feel free to browse around via:</span>
       </p>
-      <Tags className='onlyTabletShown' />
+      <Tags className='onlyMobileAndTabletShown' />
     </div>
 
 

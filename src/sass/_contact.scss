@@ -3,13 +3,14 @@
   flex-flow: column nowrap;
   align-items: center;
   width: 80%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .contact-title {
   width: 100%;
   padding-bottom: 16px;
-  border-bottom: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-400;
+  color: $primary;
   //text-align: center;
 }
 
@@ -21,15 +22,17 @@
 }
 
 .contactMeBtn {
+  min-width: 128px;
   padding: 12px {
     top: 4px;
     bottom: 4px;
   };
+  margin: 8px;
+  border-radius: 4px;
   font-size: 1.25rem;
   background: $primary;
   color: white;
-  border-radius: 4px;
-  margin-right: 8px;
+
 
   .contactMeALink {
     text-decoration: none;
@@ -44,15 +47,17 @@
 }
 
 .myResumeBtn {
+  min-width: 128px;
   padding: 12px {
     top: 4px;
     bottom: 4px;
   };
+  margin: 8px;
+  border-radius: 4px;
   font-size: 1.25rem;
   background: $primary;
   color: white;
-  border-radius: 4px;
-  margin-left: 8px;
+
 
   .myResumeALink {
     text-decoration: none;
@@ -63,5 +68,29 @@
     width: 22px;
     height: 22px;
     vertical-align: sub;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contactWrapper {
+    width: 90%
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .btnWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contactMeBtn {
+    margin: 6px;
+  }
+
+  .myResumeBtn {
+    margin: 6px;
   }
 }

@@ -23,7 +23,13 @@
   flex-flow: column nowrap;
   align-items: center;
   margin-left: 480px;
-  padding: 70px 0px
+  padding: 70px 0px 0px;
+
+  .footer {
+    margin-top: auto;
+    //color: $primary;
+    font-weight: 600;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -48,6 +54,35 @@
     flex-flow: column nowrap;
     align-items: center;
     width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  div.tabletNotShown {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .informationWrapper {
+    position: static;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: fit-content;
+  }
+
+  .whiteBackground {
+    position: static;
+    width: 100%;
+    background: transparent;
+  }
+
+  .resumeWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     margin-left: 0;
     padding: 0;
   }

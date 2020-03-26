@@ -6,12 +6,15 @@ const Experience = props => {
     <div id='experience' className='experienceWrapper'>
       <h3 className='experienceTitle'>Experience</h3>
       <div className='eachExperience'>
-        <h6 className='jobDuration'>May 2019 – Present</h6>
-        <h4 className='jobTitle'>Front-end Developer</h4>
+        <h4 className='jobTitle'>
+          Front-end Developer&nbsp;
+          <h6 className='jobDuration'>May 2019 – Present</h6>
+        </h4>
         <h5 className='jobLocation'>
           <LocationOnIcon className='locationIcon'/>
           &nbsp;University of Ottawa
         </h5>
+
         <p className='jobDetail'>
           Experiencing and proficient in following Technology:
           React, Redux, Material-UI,

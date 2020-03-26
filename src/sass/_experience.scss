@@ -9,7 +9,8 @@
   width: 100%;
   padding-bottom: 16px;
   margin-bottom: 16px;
-  border-bottom: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-400;
+  color: $primary;
 }
 
 .eachExperience {
@@ -51,10 +52,27 @@ svg.locationIcon {
 }
 
 @media only screen and (max-width: 960px) {
-
   .jobDetail {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .experienceWrapper {
+    width: 90%
+  }
+
+  .jobTitle {
+    width: 100%;
+  }
+
+  .jobDuration {
+    position: static;
+    display: inline;
+    color: $gray-600;
+    padding-top: 8px;
+    font-weight: 400;
   }
 }
