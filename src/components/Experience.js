@@ -8,7 +8,7 @@ const Experience = props => {
       <div className='eachExperience'>
         <h4 className='jobTitle'>
           Front-end Developer&nbsp;
-          <h6 className='jobDuration'>May 2019 – Present</h6>
+          <span className='jobDuration'>May 2019 – Present</span>
         </h4>
         <h5 className='jobLocation'>
           <LocationOnIcon className='locationIcon'/>

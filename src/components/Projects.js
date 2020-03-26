@@ -14,6 +14,7 @@ const renderBizmsmPics = () => {
         key={`bizmsm-${index}`}
         className='bizmsmPicWrapper'
         target='_blank'
+        rel='noreferrer noopener'
         href='https://github.com/hereiskeith/BizMSM-ecommerce-App'
       >
         <img key={`biz-${index}`} alt={`biz-${index}`} className='bizmsmPic' src={each} />
@@ -29,6 +30,7 @@ const renderDashboardPics = () => {
         key={`dashboard-${index}`}
         className='dashboardPicWrapper'
         target='_blank'
+        rel='noreferrer noopener'
         href='https://github.com/hereiskeith/React-dashboard'
       >
         <img alt={`dashboard-${index}`} className='dashboardPic' src={each} />

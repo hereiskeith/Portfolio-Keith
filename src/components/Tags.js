@@ -23,13 +23,13 @@ const Tags = props => {
 
   return (
     <div className={'tags ' + props.className}>
-      <a href='' target='_blank'>
+      <a href='https://www.linkedin.com/in/keithli93/' target='_blank' rel='noreferrer noopener'>
         {Icon(LinkedInIcon, 'eachTag')}
       </a>
-      <a href='https://github.com/hereiskeith' target='_blank'>
+      <a href='https://github.com/hereiskeith' target='_blank' rel='noreferrer noopener'>
         {Icon(GitHubIcon, 'eachTag eachTag-github')}
       </a>
-      <a href='https://www.facebook.com/keithli1993' target='_blank'>
+      <a href='https://www.facebook.com/keithli1993' target='_blank' rel='noreferrer noopener'>
         {Icon(FacebookIcon, 'eachTag')}
       </a>
       <a href='mailto:keithli9395@gmail.com?Subject=Hey Keith!'>
