@@ -29,6 +29,7 @@
   };
   margin: 8px;
   border-radius: 4px;
+  @include a-font;
   font-size: 1.25rem;
   background: $primary;
   color: white;
@@ -54,6 +55,7 @@
   };
   margin: 8px;
   border-radius: 4px;
+  @include a-font;
   font-size: 1.25rem;
   background: $primary;
   color: white;

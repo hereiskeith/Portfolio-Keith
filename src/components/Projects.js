@@ -10,9 +10,14 @@ import "slick-carousel/slick/slick-theme.css";
 const renderBizmsmPics = () => {
   return bizmsmPics.map((each, index) => {
     return (
-      <div key={`bizmsm-${index}`} className='bizmsmPicWrapper'>
+      <a
+        key={`bizmsm-${index}`}
+        className='bizmsmPicWrapper'
+        target='_blank'
+        href='https://github.com/hereiskeith/BizMSM-ecommerce-App'
+      >
         <img key={`biz-${index}`} alt={`biz-${index}`} className='bizmsmPic' src={each} />
-      </div>
+      </a>
     )
   })
 };
@@ -20,9 +25,14 @@ const renderBizmsmPics = () => {
 const renderDashboardPics = () => {
   return dashboardPics.map((each, index) => {
     return (
-      <div key={`dashboard-${index}`} className='dashboardPicWrapper'>
+      <a
+        key={`dashboard-${index}`}
+        className='dashboardPicWrapper'
+        target='_blank'
+        href='https://github.com/hereiskeith/React-dashboard'
+      >
         <img alt={`dashboard-${index}`} className='dashboardPic' src={each} />
-      </div>
+      </a>
     )
   })
 };

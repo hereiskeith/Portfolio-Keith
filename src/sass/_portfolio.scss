@@ -2,7 +2,7 @@
   position: fixed;
   display: grid;
   grid-template-rows: auto auto 1fr;
-  grid-template-columns: 300px 180px;
+  grid-template-columns: 325px 180px;
   grid-template-areas:
           "profile whiteBackground"
           "tags whiteBackground"
@@ -22,7 +22,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin-left: 480px;
+  margin-left: 505px;
   padding: 70px 0px 0px;
 
   .footer {
