@@ -3,17 +3,8 @@ import React, {useEffect, useState} from 'react';
 const Selections = props => {
   const [focus, setFocus] = useState('#about');
   const { windowScrollY } = props;
-  // const [windowScrollY, setWindowScrollY] = useState(0);
-
-  const handleClick = (e) => {
-    setFocus(e.target.id);
-  };
 
   useEffect(() => {
-    //
-    // const recordScrollY = () => setWindowScrollY(window.scrollY);
-    //
-    // window.addEventListener('scroll', recordScrollY, false);
 
     const about = document.getElementById("about").offsetTop;
     const skills = document.getElementById("skills").offsetTop;
@@ -21,13 +12,14 @@ const Selections = props => {
     const projects = document.getElementById("projects").offsetTop;
     const contact = document.getElementById("contact").offsetTop;
     const contactElTopToViewportTop = document.getElementById("contact").getBoundingClientRect().top;
-
-    if(windowScrollY >= skills && windowScrollY < experience) {
+    const ceilingWindowScrollY = Math.ceil(windowScrollY);
+    if(ceilingWindowScrollY >= skills && ceilingWindowScrollY < experience) {
+      // console.log(windowScrollY, skills);
       setFocus('#skills');
-    } else if(windowScrollY >= experience && windowScrollY < projects) {
+    } else if(ceilingWindowScrollY >= experience && ceilingWindowScrollY < projects) {
       setFocus('#experience');
     } else if (
-      windowScrollY >= projects && (windowScrollY < contact) && (contactElTopToViewportTop >= window.innerHeight)
+      ceilingWindowScrollY >= projects && (ceilingWindowScrollY < contact) && (contactElTopToViewportTop >= window.innerHeight)
       ) {
       setFocus('#projects');
     } else if(document.getElementById("contact").getBoundingClientRect().top <= window.innerHeight) {
@@ -63,7 +55,6 @@ const Selections = props => {
       <a
         id='#about'
         href='#about'
-        onClick={handleClick}
         className={'eachSelection ' + (focus === '#about' ? 'eachSelection-clicked' : '')}
       >
         About
@@ -71,7 +62,6 @@ const Selections = props => {
       <a
         id='#skills'
         href='#skills'
-        onClick={handleClick}
         className={'eachSelection ' + (focus === '#skills' ? 'eachSelection-clicked' : '')}
       >
         Skills
@@ -79,7 +69,6 @@ const Selections = props => {
       <a
         id='#experience'
         href='#experience'
-        onClick={handleClick}
         className={'eachSelection ' + (focus === '#experience' ? 'eachSelection-clicked' : '')}
       >
         Experience
@@ -87,7 +76,6 @@ const Selections = props => {
       <a
         id='#projects'
         href='#projects'
-        onClick={handleClick}
         className={'eachSelection ' + (focus === '#projects' ? 'eachSelection-clicked' : '')}
       >
         Projects
@@ -95,7 +83,6 @@ const Selections = props => {
       <a
         id='#contact'
         href='#contact'
-        onClick={handleClick}
         className={'eachSelection ' + (focus === '#contact' ? 'eachSelection-clicked' : '')}
       >
         Contact
