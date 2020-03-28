@@ -1,11 +1,63 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 
 const Selections = props => {
-  const [focus, setFocus] = useState('');
+  const [focus, setFocus] = useState('#about');
+  const [windowScrollY, setWindowScrollY] = useState(0);
 
   const handleClick = (e) => {
     setFocus(e.target.id);
   };
+
+  useEffect(() => {
+
+    const recordScrollY = () => setWindowScrollY(window.scrollY);
+
+    window.addEventListener('scroll', recordScrollY, false);
+
+    const about = document.getElementById("about").offsetTop;
+    const skills = document.getElementById("skills").offsetTop;
+    const experience = document.getElementById("experience").offsetTop;
+    const projects = document.getElementById("projects").offsetTop;
+    const contact = document.getElementById("contact").offsetTop;
+    const contactElTopToViewportTop = document.getElementById("contact").getBoundingClientRect().top;
+
+    if(windowScrollY >= skills && windowScrollY < experience) {
+      setFocus('#skills');
+    } else if(windowScrollY >= experience && windowScrollY < projects) {
+      setFocus('#experience');
+    } else if (
+      windowScrollY >= projects && (windowScrollY < contact) && (contactElTopToViewportTop >= window.innerHeight)
+      ) {
+      setFocus('#projects');
+    } else if(document.getElementById("contact").getBoundingClientRect().top <= window.innerHeight) {
+      setFocus('#contact');
+    } else {
+      setFocus('#about');
+    }
+
+    return () => window.removeEventListener('scroll', recordScrollY, false);
+  }, [windowScrollY]);
+
+  useEffect(() => {
+    const aboutLink = document.getElementById("#about");
+    const skillsLink = document.getElementById("#skills");
+    const experienceLink = document.getElementById("#experience");
+    const projectsLink = document.getElementById("#projects");
+    const contactLink = document.getElementById("#contact");
+    const selectionElements = [aboutLink, skillsLink, experienceLink, projectsLink, contactLink];
+
+    selectionElements.forEach(selection => {
+      selection.addEventListener(
+        'mouseover',
+      e => e.target.style = 'color: #268FA5; textDecoration: none',
+      false );
+
+      selection.addEventListener(
+        'mouseout',
+      e => e.target.style = '',
+      false);
+    })
+  },[]);
 
   return (
     <div className='selectionsWrapper' >

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -6,16 +6,23 @@ import { Gmail } from 'mdi-material-ui';
 
 const Tags = props => {
 
+  useEffect(() => {
+    const linkedInIcon = document.getElementById("linkedin-icon");
+    const githubIcon = document.getElementById("github-icon");
+    const facebookIcon = document.getElementById("facebook-icon");
+    const gmailIcon = document.getElementById("gmail-icon");
+   const iconElements = [linkedInIcon, githubIcon, facebookIcon, gmailIcon];
+
+   iconElements.forEach(icon => {
+     icon.addEventListener('mouseover', e => e.target.style.color = '#268FA5', false );
+     icon.addEventListener('mouseout', e => e.target.style.color = '', false);
+   })
+  },[]);
+
   const Icon = (Components, className) => {
-    const [focus, setFocus] = useState(false);
-
-    const handleClick = () => setFocus(!focus);
-
     return (
       <Components
         className={className}
-        style={focus ? {color: '#268FA5'} : {}}
-        onClick={handleClick}
       />
     )
   }
@@ -23,16 +30,16 @@ const Tags = props => {
 
   return (
     <div className={'tags ' + props.className}>
-      <a href='https://www.linkedin.com/in/keithli93/' target='_blank' rel='noreferrer noopener'>
+      <a id='linkedin-icon' href='https://www.linkedin.com/in/keithli93/' target='_blank' rel='noreferrer noopener'>
         {Icon(LinkedInIcon, 'eachTag')}
       </a>
-      <a href='https://github.com/hereiskeith' target='_blank' rel='noreferrer noopener'>
+      <a id='github-icon' href='https://github.com/hereiskeith' target='_blank' rel='noreferrer noopener'>
         {Icon(GitHubIcon, 'eachTag eachTag-github')}
       </a>
-      <a href='https://www.facebook.com/keithli1993' target='_blank' rel='noreferrer noopener'>
+      <a id='facebook-icon' href='https://www.facebook.com/keithli1993' target='_blank' rel='noreferrer noopener'>
         {Icon(FacebookIcon, 'eachTag')}
       </a>
-      <a href='mailto:keithli9395@gmail.com?Subject=Hey Keith!'>
+      <a id='gmail-icon' href='mailto:keithli9395@gmail.com?Subject=Hey Keith!'>
         {Icon(Gmail, 'eachTag eachTag-gmail')}
       </a>
     </div>

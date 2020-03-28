@@ -30,12 +30,6 @@ svg.eachTag {
   }
 }
 
-//@media only screen and (min-width: 960px) {
-//  svg:hover {
-//    color: $primary;
-//  }
-//}
-
 @media only screen and (max-width: 960px) {
   .tags {
     display: flex;
