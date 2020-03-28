@@ -30,7 +30,7 @@ const Skills = props => {
         })(LinearProgress);
 
         return (
-          <div key={each.skill} className='eachSkill'>
+          <div key={each.skill} className='eachSkill animatedSection animated'>
             <p>
               {each.skill}
               <span style={{color: each.color}}>&nbsp;{`(${each.value}%)`}</span>
@@ -46,7 +46,7 @@ const Skills = props => {
 
   return (
     <div id='skills' className='skillsWrapper'>
-      <h3 className='skills-title'>Skills</h3>
+      <h3 className='skills-title animatedSection animated'>Skills</h3>
       <div className='skillsProgress'>
         {eachSkill()}
       </div>

@@ -81,11 +81,11 @@ const Projects = props => {
 
   return (
     <div id='projects' className='projectsWrapper'>
-      <h3 className='projectsTitle'>
+      <h3 className='projectsTitle animatedSection animated'>
         Projects
       </h3>
 
-      <div className='eachProject'>
+      <div className='eachProject animatedSection animated'>
 
         <div className='logoWrapper'>
           <img alt='bizmsm-logo' className='projectLogo' src={BizMSM} />
@@ -106,7 +106,7 @@ const Projects = props => {
 
       </div>
 
-      <div className='eachProject'>
+      <div className='eachProject animatedSection animated'>
 
         <div className='logoWrapper'>
           <img alt='dashboard-logo' className='projectLogo' src={Dashboard} />

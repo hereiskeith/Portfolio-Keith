@@ -2,17 +2,18 @@ import React, {useEffect, useState} from 'react';
 
 const Selections = props => {
   const [focus, setFocus] = useState('#about');
-  const [windowScrollY, setWindowScrollY] = useState(0);
+  const { windowScrollY } = props;
+  // const [windowScrollY, setWindowScrollY] = useState(0);
 
   const handleClick = (e) => {
     setFocus(e.target.id);
   };
 
   useEffect(() => {
-
-    const recordScrollY = () => setWindowScrollY(window.scrollY);
-
-    window.addEventListener('scroll', recordScrollY, false);
+    //
+    // const recordScrollY = () => setWindowScrollY(window.scrollY);
+    //
+    // window.addEventListener('scroll', recordScrollY, false);
 
     const about = document.getElementById("about").offsetTop;
     const skills = document.getElementById("skills").offsetTop;
@@ -34,8 +35,6 @@ const Selections = props => {
     } else {
       setFocus('#about');
     }
-
-    return () => window.removeEventListener('scroll', recordScrollY, false);
   }, [windowScrollY]);
 
   useEffect(() => {

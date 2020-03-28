@@ -4,12 +4,12 @@ import KeithResume from '../static/Shanghao (Keith) Li-resume.docx';
 const Contact = props => {
   return (
     <div id='contact' className='contactWrapper'>
-      <h3 className='contact-title'>Contact</h3>
-      <p>
+      <h3 className='contact-title animatedSection animated'>Contact</h3>
+      <p className='animatedSection animated'>
         If you are interested on my aptitudes or having amazing projects on hand, please consider me for your team!
       </p>
 
-      <div className='btnWrapper'>
+      <div className='btnWrapper animatedSection animated'>
         <div className='contactMeBtn'>
           <a
             className='contactMeALink'

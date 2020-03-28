@@ -3,7 +3,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const Experience = props => {
   return (
-    <div id='experience' className='experienceWrapper'>
+    <div id='experience' className='experienceWrapper animated'>
       <h3 className='experienceTitle'>Experience</h3>
       <div className='eachExperience'>
         <h4 className='jobTitle'>
