@@ -7,7 +7,7 @@ const Selections = props => {
   useEffect(() => {
 
     const about = document.getElementById("about").offsetTop;
-    const skills = document.getElementById("skills").offsetTop;
+    const skills = document.getElementById("skills").offsetTop - 1;
     const experience = document.getElementById("experience").offsetTop;
     const projects = document.getElementById("projects").offsetTop;
     const contact = document.getElementById("contact").offsetTop;
