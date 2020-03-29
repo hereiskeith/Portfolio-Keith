@@ -13,8 +13,9 @@ const Selections = props => {
     const contact = document.getElementById("contact").offsetTop;
     const contactElTopToViewportTop = document.getElementById("contact").getBoundingClientRect().top;
     const ceilingWindowScrollY = Math.ceil(windowScrollY);
+    console.log(ceilingWindowScrollY, skills);
     if(ceilingWindowScrollY >= skills && ceilingWindowScrollY < experience) {
-      // console.log(windowScrollY, skills);
+
       setFocus('#skills');
     } else if(ceilingWindowScrollY >= experience && ceilingWindowScrollY < projects) {
       setFocus('#experience');
