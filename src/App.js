@@ -13,26 +13,30 @@ import Contact from "./components/Contact";
 
 const App = () => {
 
-  const [windowScrollY, setWindowScrollY] = useState(0);
-
   useEffect(() => {
-    const recordScrollY = () => setWindowScrollY(window.scrollY);
-    window.addEventListener('scroll', recordScrollY, false);
-
     const animatedEls = document.querySelectorAll('.animated');
-    animatedEls.forEach((el, index) => {
-      if(el.getBoundingClientRect().top < window.innerHeight) {
-        // console.log(el.scrollTop, el.getBoundingClientRect().top, window.innerHeight)
-        if(index % 2 === 0) {
-          el.classList.add('fadeInRight','slow');
-        } else {
-          el.classList.add('fadeInLeft','slow');
-        }
-      }
-    });
 
-    return () => window.removeEventListener('scroll', recordScrollY, false);
-  }, [windowScrollY]);
+    const addAnimationWhenScroll = () => {
+      animatedEls.forEach((el, index) => {
+        if(el.classList.contains('slow')) {
+          return;
+        }
+
+        if(el.getBoundingClientRect().top < window.innerHeight) {
+          if(index % 2 === 0) {
+            el.classList.add('fadeInRight','slow');
+          } else {
+            el.classList.add('fadeInLeft','slow');
+          }
+        }
+      })
+    };
+    addAnimationWhenScroll();
+
+    document.addEventListener('scroll', addAnimationWhenScroll, false);
+
+    return () => document.removeEventListener('scroll', addAnimationWhenScroll, false);
+  }, []);
 
   return (
     <div className='portfolioWrapper'>
@@ -41,7 +45,7 @@ const App = () => {
         <Profile />
         <Tags className='tabletNotShown'/>
         <div className='whiteBackground'>
-          <Selections windowScrollY={windowScrollY} />
+          <Selections />
           <MyAvatar />
         </div>
         <DigitalClock />
@@ -53,7 +57,9 @@ const App = () => {
         <Experience />
         <Projects />
         <Contact />
-        <footer className='footer animated animatedSection'>&copy;Thanks for reading and have a nice day!</footer>
+        <footer className='footer animated animatedSection'>
+          &copy;Thanks for reading and have a nice day!
+        </footer>
       </div>
 
     </div>
