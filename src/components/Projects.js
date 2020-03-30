@@ -116,7 +116,7 @@ const Projects = props => {
           <h4 className='projectTitle'>React Dashboard</h4>
 
           <p className='projectDetail'>
-            This awesome react dashboard is showing Bitcom trend with Highcharts charts
+            This awesome react dashboard is showing Bitcoin trend with Highcharts charts
             <br />
           </p>
           <Slider {...dashboardSettings}>
