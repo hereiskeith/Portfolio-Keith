@@ -7,10 +7,10 @@ const Skills = props => {
     [
       {skill: 'JavaScript', value: 90, color: '#20c997' },
       {skill: 'HTML/CSS', value: 80, color: '#dc3545' },
-      {skill: 'Git/Gitub', value: 70, color: '#6f42c1' },
+      {skill: 'Git/Gitub', value: 75, color: '#6f42c1' },
       {skill: 'React', value: 90, color: '#20c997' },
+      {skill: 'Node.js', value: 70, color: '#6f42c1' },
       {skill: 'MySQL/MongoDB', value: 50, color: '#6f42c1' },
-      {skill: 'Node.js/express', value: 70, color: '#6f42c1' },
       {skill: 'material-ui', value: 80, color: '#dc3545' },
     ];
 
