@@ -47,12 +47,12 @@ svg.locationIcon {
 }
 
 .jobDetail {
-  width: 80%;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 12px;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
   .jobDetail {
     width: 100%;
     margin-top: 20px;
