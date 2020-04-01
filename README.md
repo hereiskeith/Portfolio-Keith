@@ -4,7 +4,7 @@ Keith Li is a Front End Developer with 1 plus year of experience of front end we
 
 ## [https://www.iamkeithli.com](https://www.iamkeithli.com)
 
-![screenshot 1](../src/static/portfolio/screenshot1.png?raw=true)
-![screenshot 2](../src/static/portfolio/screenshot2.png?raw=true)
-![screenshot 3](../src/static/portfolio/screenshot3.png?raw=true)
-![screenshot 4](../src/static/portfolio/screenshot4.png?raw=true)
+![screenshot 1](./src/static/portfolio/screenshot1.png?raw=true)
+![screenshot 2](./src/static/portfolio/screenshot2.png?raw=true)
+![screenshot 3](./src/static/portfolio/screenshot3.png?raw=true)
+![screenshot 4](./src/static/portfolio/screenshot4.png?raw=true)
