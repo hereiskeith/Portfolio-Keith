@@ -10,7 +10,13 @@ const Selections = props => {
     document.addEventListener('resize', () => {
       setResizeTimes(resize + 1);
     }, false);
-  }, []);
+
+    return () => {
+      document.removeEventListener('resize', () => {
+        setResizeTimes(resize + 1);
+      }, false);
+    };
+  }, [resize]);
 
   useEffect(() => {
     const about = document.getElementById("about").offsetTop;
