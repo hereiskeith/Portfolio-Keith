@@ -28,7 +28,7 @@ const Selections = props => {
 
     const trackFocusSelection = () => {
       const { scrollY } = window;
-      console.log(scrollY, skills, experience, projects, contact);
+      // console.log(scrollY, skills, experience, projects, contact);
 
       if(about <= scrollY && scrollY < skills) {
         setFocus('#about');
