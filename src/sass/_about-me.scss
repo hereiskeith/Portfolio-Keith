@@ -14,7 +14,8 @@
   //text-align: center;
 }
 
-div.onlyMobileAndTabletShown, .onlyMobileAndTabletShown {
+div.onlyMobileAndTabletShown,
+.onlyMobileAndTabletShown {
   display: none;
 }
 
@@ -32,7 +33,6 @@ div.onlyMobileAndTabletShown, .onlyMobileAndTabletShown {
 
 @media only screen and (max-width: 600px) {
   .aboutMeWrapper {
-    width: 90%
+    width: 90%;
   }
 }
-

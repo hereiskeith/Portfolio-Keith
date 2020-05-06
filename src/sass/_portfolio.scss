@@ -4,9 +4,9 @@
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 325px 180px;
   grid-template-areas:
-          "profile whiteBackground"
-          "tags whiteBackground"
-          "digitalClock whiteBackground";
+    "profile whiteBackground"
+    "tags whiteBackground"
+    "digitalClock whiteBackground";
   min-height: 100vh;
 }
 

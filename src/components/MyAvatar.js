@@ -1,14 +1,12 @@
-import React from 'react';
-import Keith from '../static/avatar.jpg';
+import React from "react";
+import Keith from "../static/avatar.jpg";
 
-const MyAvatar = props => {
+const MyAvatar = (props) => {
   return (
-    <div className='avatarWrapper'>
-      <img alt='keith-avatar' className='avatar' src={Keith} />
+    <div className="avatarWrapper">
+      <img alt="keith-avatar" className="avatar" src={Keith} />
     </div>
-
-
-  )
+  );
 };
 
 export default MyAvatar;

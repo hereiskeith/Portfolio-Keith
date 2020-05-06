@@ -1,6 +1,8 @@
 /*** box sizing border-box for all elements ***/
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -32,13 +34,20 @@ input::-moz-focus-inner {
   margin: 0;
 }
 
-ul, ol, dd {
+ul,
+ol,
+dd {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 8px 0;
   //font-weight:inherit;
