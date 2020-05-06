@@ -28,10 +28,10 @@ const Selections = (props) => {
 
   useEffect(() => {
     const about = document.getElementById("about").offsetTop;
-    const skills = document.getElementById("skills").offsetTop - 2;
-    const experience = document.getElementById("experience").offsetTop - 2;
-    const projects = document.getElementById("projects").offsetTop - 2;
-    const contact = document.getElementById("contact").offsetTop - 2;
+    const skills = document.getElementById("skills").offsetTop - 3;
+    const experience = document.getElementById("experience").offsetTop - 3;
+    const projects = document.getElementById("projects").offsetTop - 3;
+    const contact = document.getElementById("contact").offsetTop - 3;
     // const contactElTopToViewportTop = document.getElementById("contact").getBoundingClientRect().top;
 
     const trackFocusSelection = () => {

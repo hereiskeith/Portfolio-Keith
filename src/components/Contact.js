@@ -1,5 +1,5 @@
 import React from "react";
-import KeithResume from "../static/Shanghao (Keith) Li-resume.docx";
+import KeithResume from "../static/Keith Li-resume.pdf";
 
 const Contact = (props) => {
   return (
@@ -30,7 +30,7 @@ const Contact = (props) => {
           <a
             className="myResumeALink"
             href={KeithResume}
-            download="Shanghao-Keith-Li-resume.docx"
+            download="Keith-Li-resume.pdf"
           >
             <img
               alt="resume"
