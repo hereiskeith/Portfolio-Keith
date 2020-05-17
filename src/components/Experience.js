@@ -32,7 +32,7 @@ const Experience = (props) => {
 
       <div className="eachExperience">
         <h4 className="jobTitle">
-          Front-end Developer&nbsp;
+          Web Developer&nbsp;
           <span className="jobDuration">April 2020 – Present</span>
         </h4>
         <h5 className="jobLocation">
