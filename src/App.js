@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./sass/styles.scss";
 import MyAvatar from "./components/MyAvatar.js";
 import Profile from "./components/Profile.js";
