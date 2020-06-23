@@ -5,10 +5,24 @@ const Experience = (props) => {
   return (
     <div id="experience" className="experienceWrapper animatedSection animated">
       <h3 className="experienceTitle">Experience</h3>
-      <div className="eachExperience">
+
+      <div className="eachExperience animatedSection animated">
+        <h4 className="jobTitle">
+          Software Front-end Developer&nbsp;
+          <span className="jobDuration">June 2020 – Present</span>
+        </h4>
+        <h5 className="jobLocation">
+          <LocationOnIcon className="locationIcon" />
+          &nbsp;Privacy Analytics-IQVIA, Ottawa, Canada
+        </h5>
+
+        <p className="jobDetail"></p>
+      </div>
+
+      <div className="eachExperience animatedSection animated">
         <h4 className="jobTitle">
           Front-end Developer&nbsp;
-          <span className="jobDuration">April 2020 – Present</span>
+          <span className="jobDuration">April 2020 – June 2020</span>
         </h4>
         <h5 className="jobLocation">
           <LocationOnIcon className="locationIcon" />
@@ -30,9 +44,9 @@ const Experience = (props) => {
         </p>
       </div>
 
-      <div className="eachExperience">
+      <div className="eachExperience animatedSection animated">
         <h4 className="jobTitle">
-          Web Developer&nbsp;
+          Software Front-end Developer&nbsp;
           <span className="jobDuration">April 2020 – Present</span>
         </h4>
         <h5 className="jobLocation">
@@ -52,7 +66,7 @@ const Experience = (props) => {
         </p>
       </div>
 
-      <div className="eachExperience">
+      <div className="eachExperience animatedSection animated">
         <h4 className="jobTitle">
           Front-end Developer&nbsp;
           <span className="jobDuration">May 2019 – May 2020</span>
