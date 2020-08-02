@@ -16,7 +16,10 @@ const Experience = (props) => {
           &nbsp;Privacy Analytics-IQVIA, Ottawa, Canada
         </h5>
 
-        <p className="jobDetail"></p>
+        <p className="jobDetail">
+          Tech Stack: Angular9, RxJS, NgRx, Typescript, Angular Material,
+          Foundation, RestAPI
+        </p>
       </div>
 
       <div className="eachExperience animatedSection animated">
@@ -46,8 +49,8 @@ const Experience = (props) => {
 
       <div className="eachExperience animatedSection animated">
         <h4 className="jobTitle">
-          Software Front-end Developer&nbsp;
-          <span className="jobDuration">April 2020 – Present</span>
+          Front-end Developer&nbsp;
+          <span className="jobDuration">April 2020 – June 2020</span>
         </h4>
         <h5 className="jobLocation">
           <LocationOnIcon className="locationIcon" />
