@@ -6,12 +6,12 @@ const Skills = (props) => {
   const skills = [
     { skill: "JavaScript", value: 90, color: "#20c997" },
     { skill: "HTML/CSS", value: 80, color: "#dc3545" },
-    { skill: "Git/Gitub", value: 80, color: "#dc3545" },
-    { skill: "React", value: 90, color: "#20c997" },
-    { skill: "Node.js", value: 75, color: "#6f42c1" },
+    { skill: "RxJs", value: 85, color: "#dc3545" },
+    { skill: "React", value: 80, color: "#20c997" },
+    { skill: "TypeScript", value: 85, color: "#6f42c1" },
     { skill: "MySQL/MongoDB", value: 70, color: "#6f42c1" },
-    { skill: "material-ui", value: 80, color: "#dc3545" },
-    { skill: "Angular", value: 75, color: "#20c997" },
+    { skill: "NgRx", value: 85, color: "#dc3545" },
+    { skill: "Angular", value: 90, color: "#20c997" },
   ];
 
   const eachSkill = () => {
